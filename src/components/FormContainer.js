@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, memo } from "react";
 import CreateModalForm from "./CreateModalForm";
 import EditModalForm from "./EditModalForm";
 import DeleteModalForm from "./DeleteModalForm";
@@ -63,4 +63,4 @@ const FormContainer = ({
   return form();
 };
 
-export default FormContainer;
+export default memo(FormContainer);

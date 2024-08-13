@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   Button,
   Dialog,
@@ -45,4 +45,4 @@ const DeleteModalForm = ({
   );
 };
 
-export default DeleteModalForm;
+export default memo(DeleteModalForm);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   Button,
   TextField,
@@ -68,4 +68,4 @@ const ModalForm = ({
   );
 };
 
-export default ModalForm;
+export default memo(ModalForm);

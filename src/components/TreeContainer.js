@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useMemo } from "react";
+import React, { useState, useCallback, useEffect, useMemo, memo } from "react";
 import PropTypes from "prop-types";
 
 import { Container, IconButton, Snackbar, Alert, Box } from "@mui/material";
@@ -272,4 +272,4 @@ TreeContainer.propTypes = {
   children: PropTypes.array,
 };
 
-export default TreeContainer;
+export default memo(TreeContainer);

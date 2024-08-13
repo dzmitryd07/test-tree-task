@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   Button,
   TextField,
@@ -67,4 +67,4 @@ const EditModalForm = ({
   );
 };
 
-export default EditModalForm;
+export default memo(EditModalForm);
